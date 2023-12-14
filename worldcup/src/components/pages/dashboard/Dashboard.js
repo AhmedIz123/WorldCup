@@ -3,6 +3,8 @@ import LiveScore from '../../Elements/LiveScore/LiveScore';
 import HostCountries from '../dashboard/HostCountries/HostCountries';
 import Teams from './Teams/Teams';
 import './Dashboard.css';
+import Matches from './Matches/Matches';
+import Standings from './Standings/Standings';
 export default function Dashboard(){
     return <>
         <div className='row Cd-Ls' style={{margin:"5px",width:"99%",position:"relative"}}>
@@ -16,6 +18,11 @@ export default function Dashboard(){
         <div className='row dash-content' style={{margin:"5px",width:"99%",position:"relative"}}>
             <HostCountries/>
             <Teams/>
+            <Matches/>
+            <div className='trait'></div>
+            <Standings/>
+            <div className='trait'></div>
+            <div className='trait'></div>
         </div>
     </>
 }
