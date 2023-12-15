@@ -1,14 +1,10 @@
 .HC-Card{
-    width: 430px;
-    height: 300px;
     flex-shrink: 0;
     border-radius: 16px;
     filter:drop-shadow(0px 3.173px 19.04px rgba(189, 189, 189, 0.23));
     background-size: cover;
 }
 .HC-filter{
-    width: 430px;
-    height: 300px;
     border-radius: 16px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 31.6%, rgba(0, 0, 0, 0.52) 73.45%);
     position: relative;
@@ -37,13 +33,83 @@
     line-height: 144%;
     width: fit-content;
 }
-@media(max-width: 830px){
+@media(min-width: 2664px){
+    .HC-Card{
+        width: 700px;
+        height: 500px;
+    }
+    .HC-filter{
+        width: 700px;
+        height: 500px;
+    }
+    .HC-info h3{
+        font-size: 50.855px;
+    }
+    .HC-info p{
+        font-size: 20px;
+    }
+}
+@media(max-width: 2664px){
+    .HC-Card{
+        width: 600px;
+        height: 350px;
+    }
+    .HC-filter{
+        width: 600px;
+        height: 350px;
+    }
+    .HC-info h3{
+        font-size: 40.855px;
+    }
+    .HC-info p{
+        font-size: 18px;
+    }
+}
+@media(max-width: 2000px){
+    .HC-Card{
+        width: 438px;
+        height: 320px;
+    }
+    .HC-filter{
+        width: 438px;
+        height: 320px;
+    }
+    .HC-info h3{
+        font-size: 28.855px;
+    }
+    .HC-info p{
+        font-size: 12px;
+    }
+}
+@media(max-width: 500px){
     .HC-Card{
         width: 343px;
-        height: 272.801px;
+        height: 273px;
     }
     .HC-filter{
         width: 343px;
-        height: 272.801px;
+        height: 273px;
+    }
+    .HC-info h3{
+        font-size: 28.855px;
+    }
+    .HC-info p{
+        font-size: 12px;
+    }
+}
+@media(max-width: 400px){
+    .HC-Card{
+        width: 300px;
+        height: 230px;
+    }
+    .HC-filter{
+        width: 300px;
+        height: 230px;
+    }
+    .HC-info h3{
+        font-size: 28.855px;
+    }
+    .HC-info p{
+        font-size: 12px;
     }
 }

@@ -95,3 +95,25 @@ background: rgba(250, 14, 14, 0.10);
     line-height: 120%; /* 16.8px */
     margin: auto 0;
 }
+@media(max-width: 1050px){
+    .MI-team h3{
+        display: none;
+    }
+    .MI-teams{
+        width: fit-content;
+    }
+    .MI-container{
+        width: 100%;
+        min-width: fit-content;
+    }
+}
+@media(max-width: 750px){
+    .MI-status{
+        display: none;
+    }
+}
+@media(max-width: 530px){
+    .MI-time{
+        display: none;
+    }
+}
