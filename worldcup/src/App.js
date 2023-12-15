@@ -3,6 +3,7 @@ import Logo from './images/Unity kick 1.png';
 import './App.css';
 import { useEffect, useState } from 'react';
 import Dashboard from './components/pages/dashboard/Dashboard';
+import StandingPage from './components/pages/standingPage/StandingPage';
 function App() {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 1100);
   const [isNavOpen, setIsNavOpen]= useState(true);
@@ -27,7 +28,7 @@ function App() {
         <Navbar isSmallScreen={isSmallScreen} isNavOpen={isNavOpen} setNavOpen={setIsNavOpen}/>
       </div>
       <div className='right-side'>
-        <Dashboard/>
+        <Dashboard />
       </div>
     </div>
   );

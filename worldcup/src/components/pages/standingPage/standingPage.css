@@ -1,0 +1,25 @@
+
+.standingPage .standingTitle {
+  color: var(--Black, #100f0f);
+  text-align: center;
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 65px 0px;
+}
+.standingPage .standingSection {
+    background-color: white;
+    border-radius: 16px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 15px 50px;
+}
+.standingPage .standingSection .standings-list {
+    overflow: visible;
+    height: auto;
+}
