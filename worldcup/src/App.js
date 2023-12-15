@@ -4,6 +4,7 @@ import './App.css';
 import { useEffect, useState } from 'react';
 import Dashboard from './components/pages/dashboard/Dashboard';
 import { BrowserRouter as Router, Route, Routes, Outlet } from 'react-router-dom';
+import StandingPage from './components/pages/standingPage/StandingPage';
 function App() {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 1400);
   const [isNavOpen, setIsNavOpen]= useState(false);
@@ -31,6 +32,7 @@ function App() {
         <Router>
           <Routes>
             <Route path='/' element={<Dashboard/>}/>
+            <Route path='/Standings' element={<StandingPage/>}/>
           </Routes>
         </Router>
       </div>

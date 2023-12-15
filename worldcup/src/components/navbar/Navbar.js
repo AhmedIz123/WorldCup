@@ -4,6 +4,7 @@ import Spain from '../../images/Spain (ES).svg';
 import Portugal from '../../images/Portugal (PT).svg';
 import Palestine from '../../images/State of Palestine (PS).svg';
 import './Navbar.css';
+import { Link, NavLink } from 'react-router-dom';
 export default function Navbar({isSmallScreen,isNavOpen,setNavOpen}){
     return<>
         <div className={`navbar-content ${(isNavOpen==false && isSmallScreen)?`hide-nav`:``} ${isSmallScreen?`mobile`:``}`}>
@@ -42,19 +43,21 @@ export default function Navbar({isSmallScreen,isNavOpen,setNavOpen}){
                             </svg>
                             <h4>Teams</h4>
                         </div>
+                        <NavLink className='active' ar to='/Standings'>
                             <div className='menu-item'>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <g clip-path="url(#clip0_1_708)">
-                                <path d="M19 3L23 8H20V20H18V8H15L19 3ZM14 18V20H3V18H14ZM14 11V13H3V11H14ZM12 4V6H3V4H12Z" fill="#636363"/>
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_1_708">
-                                <rect width="24" height="24" fill="white"/>
-                                </clipPath>
-                            </defs>
-                            </svg>
-                            <h4>Standings</h4>
-                        </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <g clip-path="url(#clip0_1_708)">
+                                    <path d="M19 3L23 8H20V20H18V8H15L19 3ZM14 18V20H3V18H14ZM14 11V13H3V11H14ZM12 4V6H3V4H12Z" fill="#636363"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_708">
+                                    <rect width="24" height="24" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                                </svg>
+                                <h4>Standings</h4>
+                            </div>
+                        </NavLink>
                         <div className='menu-item'>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <g clip-path="url(#clip0_1_713)">

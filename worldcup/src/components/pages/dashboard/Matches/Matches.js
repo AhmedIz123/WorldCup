@@ -5,7 +5,6 @@ import matchesData from '../../../../data/matches.json';
 export default function Matches(){
     const [comingMatch,setComingMatch]=useState(false);
     const [matchData, setMatchData] = useState(matchesData);
-    console.log(matchData);
     let matchResult;
     if (comingMatch) {
         const comingMatches = matchData.matches.find((matchType) => matchType.type === 'coming');

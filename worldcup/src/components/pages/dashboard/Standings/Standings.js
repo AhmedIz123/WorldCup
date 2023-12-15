@@ -4,7 +4,6 @@ import groups from '../../../../data/groupes.json';
 import { useState } from 'react';
 export default function Standings(){
     const [groupsList,setgroupsList]=useState(groups);
-    console.log(groupsList);
     return <>
         <div className='standings'>
             <div className='standings-title'>
