@@ -28,7 +28,7 @@ function App() {
         <Navbar isSmallScreen={isSmallScreen} isNavOpen={isNavOpen} setNavOpen={setIsNavOpen}/>
       </div>
       <div className='right-side'>
-        <Dashboard />
+        <StandingPage />
       </div>
     </div>
   );
