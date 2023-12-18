@@ -88,14 +88,14 @@
 @media(max-width: 2000px){
     .HC-Card{
         width: 600px;
-        height: 380px;
+        height: 350px;
     }
     .HC-filter{
         width: 600px;
-        height: 380px;
+        height: 350px;
     }
     .HC-slide{
-        height: 380px !important;
+        height: 350px !important;
         width: 600px !important;
     }
     .HC-info h3{

@@ -15,28 +15,28 @@ function App() {
         return () => window.removeEventListener('resize', handleResize);
     },[window.innerWidth]);
   return (
-    <div className={`page-content ${isSmallScreen?`block`:`inline`}`}>
-      <div className={`sidebar ${isSmallScreen?`block`:`inline`}`}>
-        {isSmallScreen && (
-          <div id='burger' className={`logo-menu`}>
-            <i id='burger' class="fa-solid fa-bars fa-xl" style={{color: "#636363;"}} onClick={()=>{setIsNavOpen(!isNavOpen)}}></i>
-            <div className="logo">
-              <img src={Logo} alt='Logo'/>
-              <h2>Unity Kick</h2>
+    <Router>
+      <div className={`page-content ${isSmallScreen?`block`:`inline`}`}>
+        <div className={`sidebar ${isSmallScreen?`block`:`inline`}`}>
+          {isSmallScreen && (
+            <div id='burger' className={`logo-menu`}>
+              <i id='burger' class="fa-solid fa-bars fa-xl" style={{color: "#636363;"}} onClick={()=>{setIsNavOpen(!isNavOpen)}}></i>
+              <div className="logo">
+                <img src={Logo} alt='Logo'/>
+                <h2>Unity Kick</h2>
+              </div>
             </div>
-          </div>
-        )}
-        <Navbar isSmallScreen={isSmallScreen} isNavOpen={isNavOpen} setNavOpen={setIsNavOpen}/>
+          )}
+          <Navbar isSmallScreen={isSmallScreen} isNavOpen={isNavOpen} setNavOpen={setIsNavOpen}/>
       </div>
       <div className='right-side'>
-        <Router>
           <Routes>
             <Route path='/' element={<Dashboard/>}/>
             <Route path='/Standings' element={<StandingPage/>}/>
-          </Routes>
-        </Router>
+          </Routes> 
       </div>
     </div>
+  </Router>
   );
 }
 
