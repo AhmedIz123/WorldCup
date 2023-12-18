@@ -4,7 +4,7 @@ import Spain from '../../images/Spain (ES).svg';
 import Portugal from '../../images/Portugal (PT).svg';
 import Palestine from '../../images/State of Palestine (PS).svg';
 import './Navbar.css';
-import { Link, NavLink } from 'react-router-dom';
+import {Link,NavLink} from 'react-router-dom';
 export default function Navbar({isSmallScreen,isNavOpen,setNavOpen}){
     return<>
         <div className={`navbar-content ${(isNavOpen==false && isSmallScreen)?`hide-nav`:``} ${isSmallScreen?`mobile`:``}`}>
@@ -43,7 +43,6 @@ export default function Navbar({isSmallScreen,isNavOpen,setNavOpen}){
                             </svg>
                             <h4>Teams</h4>
                         </div>
-                        <NavLink className='active' ar to='/Standings'>
                             <div className='menu-item'>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <g clip-path="url(#clip0_1_708)">
@@ -57,7 +56,6 @@ export default function Navbar({isSmallScreen,isNavOpen,setNavOpen}){
                                 </svg>
                                 <h4>Standings</h4>
                             </div>
-                        </NavLink>
                         <div className='menu-item'>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <g clip-path="url(#clip0_1_713)">

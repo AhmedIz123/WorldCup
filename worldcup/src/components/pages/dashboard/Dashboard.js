@@ -5,6 +5,9 @@ import Teams from './Teams/Teams';
 import './Dashboard.css';
 import Matches from './Matches/Matches';
 import Standings from './Standings/Standings';
+import ShopCard from '../../Elements/ShopCard/ShopCard';
+import Shop from './Shop/Shop';
+import NewsCrad from '../../Elements/NewsCard/NewsCard';
 export default function Dashboard(){
     return <>
         <div className='row Cd-Ls' style={{margin:"5px",width:"99%",position:"relative"}}>
@@ -23,6 +26,8 @@ export default function Dashboard(){
             <Standings/>
             <div className='trait'></div>
             <div className='trait'></div>
+            <Shop/>
+            <NewsCrad/>
         </div>
     </>
 }
